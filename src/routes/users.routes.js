@@ -6,6 +6,12 @@ const usersRoutes = Router()
 
 function myMiddleware(request, response, next) {
     console.log("Você passou pelo MIDDLEWARE")
+
+    if(!request.body.isAdmin){
+       return response.json({ message: "Usuário não tem permissão. Contate o administrador" }) 
+    }
+
+    next()
 }
 
 const usersController = new UsersController()
