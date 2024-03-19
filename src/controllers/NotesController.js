@@ -24,4 +24,4 @@ class NotesController{
         response.json()
     }
 }
-module.exports = NotesController
+module.exports = NotesController;
