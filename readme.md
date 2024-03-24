@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Beekeper Studio.
 
 ## 💻 Projeto
-O NodeMovies🎬 é uma aplicação que oferece a integração entre banco de dados relacional que possibilita a criação/  de vários usuários, com criptografia de senha e middleware com tratamento de exceções. O usuário poderá criar várias notas com seus filmes preferidos, contendo o título, a nota e as categorias de cada filme. O usuário também poderá atribuir esse filme a um usuário distinto e excluir esse filme da sua lista futuramente.
+O NodeMovies🎬 é uma aplicação que oferece a integração entre banco de dados relacional e a plataforma Insomnia + VScode que possibilita a criação/  de vários usuários, com criptografia de senha e middleware com tratamento de exceções. O usuário poderá criar várias notas com seus filmes preferidos, contendo o título, a nota e as categorias de cada filme. O usuário também poderá atribuir esse filme a um usuário distinto e excluir esse filme da sua lista futuramente.
 Sobre o tratamento de exceções, a aplicação não permitirá que o usuário possua 2 emails igual bem como no ato da atualização de senha, ele insira a senha anterior corretamente.
 
 ## 🔖 Layout
