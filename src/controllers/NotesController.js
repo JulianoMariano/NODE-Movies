@@ -20,10 +20,28 @@ class NotesController {
         }
       })
   
-      await knex("tags").insert(tagsInsert)
+    await knex("tags").insert(tagsInsert)
   
-      response.json()
-    }
+    response.json()
   }
+  
+  async show(request, response) {
+    const { id } = request.params
+    const note = await knex("notes").where({id}).first()
+    const tags = await knex("tags").where({note_id: id}).orderBy("name")
+
+    return response.json({
+      ...note,
+      tags
+    })
+  }
+  
+  async delete(request, response){
+    const { id } = request.params
+    await knex("notes").where({id}).delete()
+
+    return response.json()
+  }
+}
   
   module.exports = NotesController
